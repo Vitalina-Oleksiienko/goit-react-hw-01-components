@@ -4,8 +4,8 @@ import Profile from './components/Profile/Profile';
 //import friends from './friends.json';
 //import FriendList from './components/Friends/FriendList';
 
-//import statisticalData from './statistical-data.json';
-//import StatList from './components/Statistics/Statistics';
+import statisticalData from './components/Statistics/statistics.json';
+import Statistics from './components/Statistics/Statistics';
 
 //import transaction from './transactions.json';
 //import TransactionHistory from './components/Transaction/Transaction';
@@ -22,6 +22,9 @@ export default function App() {
         stats={user.stats}
       />
       
+      <Statistics title="Upload stats" stats={statisticalData} />;
+      
+
     </div>
   );
 }

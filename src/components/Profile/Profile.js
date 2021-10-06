@@ -23,16 +23,16 @@ export default function Profile({
         <p className="profile__location">{location}</p>
       </div>
 
-      <ul className="profile__stats">
-        <li className="profile__stats-item">
+      <ul className="stats">
+        <li className="profile__stats">
           <span className="label">Followers </span>
           <span className="quantity">{stats.followers}</span>
         </li>
-        <li className="profile__stats-item">
+        <li className="profile__stats">
           <span className="label">Views </span>
           <span className="quantity">{stats.views}</span>
         </li>
-        <li className="profile__stats-item">
+        <li className="profile__stats">
           <span className="label">Likes </span>
           <span className="quantity">{stats.likes}</span>
         </li>
