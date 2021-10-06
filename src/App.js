@@ -1,8 +1,8 @@
 import user from './components/Profile/user.json';
 import Profile from './components/Profile/Profile';
 
-//import friends from './friends.json';
-//import FriendList from './components/Friends/FriendList';
+import friends from './components/FriendList/friend-list.json';
+import FriendList from './components/FriendList/FriendList';
 
 import statisticalData from './components/Statistics/statistics.json';
 import Statistics from './components/Statistics/Statistics';
@@ -22,8 +22,9 @@ export default function App() {
         stats={user.stats}
       />
       
-      <Statistics title="Upload stats" stats={statisticalData} />;
-      
+      <Statistics title="Upload stats" stats={statisticalData} />
+
+      <FriendList friends={friends} />,
 
     </div>
   );
