@@ -7,8 +7,8 @@ import FriendList from './components/FriendList/FriendList';
 import statisticalData from './components/Statistics/statistics.json';
 import Statistics from './components/Statistics/Statistics';
 
-//import transaction from './transactions.json';
-//import TransactionHistory from './components/Transaction/Transaction';
+import transactions from './components/TransactionHistory/transactions-history.json';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 
 export default function App() {
@@ -24,7 +24,9 @@ export default function App() {
       
       <Statistics title="Upload stats" stats={statisticalData} />
 
-      <FriendList friends={friends} />,
+      <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
 
     </div>
   );
